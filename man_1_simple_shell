@@ -1,0 +1,28 @@
+NAME
+    simple_shell - a simple interactive shell program
+
+SYNOPSIS
+	./hsh
+
+DESCRIPTION
+    simple_shell is a simple shell program written in C. It provides both interactive and non-interactive modes for executing commands. In interactive mode, it displays a prompt and reads commands from the user until the user enters "exit" to quit the shell. In non-interactive mode, it takes a single command as an argument and executes it.
+
+COMMAND-LINE ARGUMENTS
+    command
+        A command to be executed in non-interactive mode. If provided, myshell will execute this command and exit. The command can contain multiple arguments separated by spaces.
+
+INTERACTIVE MODE
+    When myshell is run without any command-line arguments, it enters interactive mode. In this mode, it displays a prompt ('$') and waits for the user to enter a command. The following built-in commands are supported:
+    
+    cd [directory]
+        Change the current working directory to the specified directory.
+    
+    exit
+        Exit the shell.
+
+NON-INTERACTIVE MODE
+    When myshell is run with a command-line argument, it enters non-interactive mode. In this mode, it executes the provided command and exits. The command can contain multiple arguments separated by spaces.
+
+AUTHOR
+	Bryan Kotro,  Cuevas Luisdavid, Wail Abou Zid.	
+
