@@ -37,6 +37,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ## Author
 Wail Abou Zid, Bryan Kotro, Cuevas Luisdavid.
 
-![Start](https://github.com/LDtheGHOST/holbertonschool-simple_shell/assets/113838593/24cf442f-d29f-4f21-b16a-a5e284e5bf03)
+![Start (1)](https://github.com/LDtheGHOST/holbertonschool-simple_shell/assets/113838593/9dfe47a2-fc6d-417c-9bd1-c673fc8b7c6f)
+
 
 
