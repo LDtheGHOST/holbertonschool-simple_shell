@@ -1,28 +1,43 @@
-NAME
-    simple_shell - a simple interactive shell program
+.TH HSH 1 "26 April 2024" "1.0" "Man page"
+.SH NAME
+.B hsh
+- command interpreter (shell)
 
-SYNOPSIS
-	./hsh
+.SH SYNOPSIS
+.B Interactive mode:
+.RS
+hsh
+.RE
+.B Non-Interactive mode:
+.RS
+echo "ls" | hsh
+.RE
 
-DESCRIPTION
-    simple_shell is a simple shell program written in C. It provides both interactive and non-interactive modes for executing commands. In interactive mode, it displays a prompt and reads commands from the user until the user enters "exit" to quit the shell. In non-interactive mode, it takes a single command as an argument and executes it.
+.SH DESCRIPTION
+.B hsh
+is a shell-like command interpreter.
+It interprets commands entered by the user, executes them, and returns the results.
 
-COMMAND-LINE ARGUMENTS
-    command
-        A command to be executed in non-interactive mode. If provided, myshell will execute this command and exit. The command can contain multiple arguments separated by spaces.
+.SH BUILT-IN COMMANDS
+.B hsh
+have several built-in commands:
+.sp
+.B env
+.RS
+Print all environment variables
+.RE
+.B exit
+.RS
+Exit the shell with a status 0.
+.RE
 
-INTERACTIVE MODE
-    When myshell is run without any command-line arguments, it enters interactive mode. In this mode, it displays a prompt ('$') and waits for the user to enter a command. The following built-in commands are supported:
-    
-    cd [directory]
-        Change the current working directory to the specified directory.
-    
-    exit
-        Exit the shell.
+.SH EXIT STATUS
+0 upon success, and a non-zero value upon error.
 
-NON-INTERACTIVE MODE
-    When myshell is run with a command-line argument, it enters non-interactive mode. In this mode, it executes the provided command and exits. The command can contain multiple arguments separated by spaces.
+.SH SEE ALSO
+.I bash(1)
 
-AUTHOR
-	Bryan Kotro,  Cuevas Luisdavid, Wail Abou Zid.	
-
+.SH AUTHOR
+.I Luis-David Cuevas. ~
+.I Bryan Kotro. ~
+.I Wail Adou Zid.
