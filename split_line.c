@@ -24,7 +24,8 @@ char **split_line(char *line)
 	}
 	words[word_count] = NULL;
 	return (words);
-}#include "shell.h"
+}
+#include "shell.h"
 
 /**
  * split_line - Split a line into words
